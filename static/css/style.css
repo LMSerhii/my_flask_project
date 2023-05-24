@@ -1,5 +1,4 @@
 body {
-    background-image: url("/static/img/blue-sky.jpg");
-    background-repeat: no-repeat;
-     background-position:   top;
+    background-image: url("/static/img/background.png");
+    background-size: 100% 100vh;
 }
