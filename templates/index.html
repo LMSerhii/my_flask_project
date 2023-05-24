@@ -1,0 +1,57 @@
+{% extends 'base.html' %}
+
+{% block title %}Главная страница{% endblock title %}
+
+{% block content %}
+
+<!--<div class="container-sm">-->
+<!--    <form action="" role="form" class="form-inline">-->
+<!--        <div class="mb-3">-->
+<!--            <input type="text" id="email" placeholder="Сергей" class="form-control">-->
+<!--            <div id="passwordHelpBlock1" class="form-text" style="color:#FFFFFF;">-->
+<!--                Имя-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="mb-3">-->
+<!--            <input type="text" id="date" placeholder="25.03.1985" class="form-control">-->
+<!--            <div id="passwordHelpBlock2" class="form-text" style="color:#FFFFFF;">-->
+<!--                Дата рождения-->
+<!--            </div>-->
+<!--        </div>-->
+<!--        <div class="d-grid gap-2">-->
+<!--            <button type="button" class="btn btn-success">Получить результат</button>-->
+<!--        </div>-->
+<!--    </form>-->
+<!--</div>-->
+
+<div class="position-relative p-5 text-center rounded-5" style="margin:40px;">
+    <h1 style="color:#FFFFFF;" >Матрица личностей</h1>
+    <p class="col-lg-6 mx-auto mb-4">
+        <div class="container">
+            <div class="row g-3 align-items-center mb-3">
+                <div class="col-sm-2" style="color:#FFFFFF;">
+                    <label for="inputName" class="col-form-label">Имя</label>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text" id="inputName" class="form-control" aria-labelledby="nameHelpInline"
+                           placeholder="Сергей">
+                </div>
+            </div>
+            <div class="row g-3 align-items-center mb-3">
+                <div class="col-sm-2" style="color:#FFFFFF;">
+                    <label for="inputDate" class="col-form-label">Дата рождения</label>
+                </div>
+                <div class="col-sm-8">
+                    <input type="text" id="inputDate" class="form-control" aria-labelledby="dateHelpInline"
+                           placeholder="29.03.1985">
+                </div>
+            </div>
+            <div class="d-grid gap-2 d-md-flex justify-content-md-center">
+                <button type="button" class="btn btn-primary opacity-75">Получить результат</button>
+            </div>
+        </div>
+    </p>
+</div>
+
+
+{% endblock content %}
