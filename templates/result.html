@@ -1,10 +1,23 @@
 {% extends 'base.html' %}
 
-{% block title %}Страница с результатом{% endblock title %}
+{% block title %}{{ context.title }}{% endblock title %}
 
 {% block content %}
 
-<div class="container-md" style="color:#fff; margin-top:400px">
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <div class="alert alert-primary" role="alert" style="color:#2F4F4F; margin-top:300px">
+                <!--    <h2>{{ context.name }}</h2>-->
+                <!--    <h3>{{ context.birthday }}</h3>-->
+                A simple secondary alert—check it out!
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-md" style="color:#fff; margin-top:100px">
     <p>
         Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum
         используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
@@ -14,6 +27,10 @@
         веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много
         версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
     </p>
+</div>
+
+<div class="alert alert-secondary" role="alert">
+    A simple secondary alert—check it out!
 </div>
 
 
