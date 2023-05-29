@@ -1,36 +1,608 @@
 {% extends 'base.html' %}
 
-{% block title %}{{ context.title }}{% endblock title %}
-
 {% block content %}
 
-<div class="container">
-    <div class="row">
-        <div class="col-3">
-            <div class="alert alert-primary" role="alert" style="color:#2F4F4F; margin-top:300px">
-                <!--    <h2>{{ context.name }}</h2>-->
-                <!--    <h3>{{ context.birthday }}</h3>-->
-                A simple secondary alert—check it out!
+<div class="container-fluid">
+    <div class="row" style="margin-top:80px;">
+        <div class="col-12">
+            <div class="text-start text-white">
+                <h4>ДАТА РОЖДЕНИЯ</h4>
+                <p>{{ context.name }}</p>
+                <p>{{ context.birthday }}</p>
             </div>
         </div>
     </div>
-</div>
+    <div class="row">
+        <div class="text-center text-white">
+            <h3>Матрица <br>"Пространство личности"</h3>
+        </div>
+        <!--        первый график          -->
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="850 200 1700 1700"
+             style="vertical-align:top;text-anchor:middle;font-family:monospace;font-size:16px;">
+            <g transform="scale(4)">
+                <!--     центр ---  третий верх           -->
+                <line x1="425" y1="250" x2="425" y2="120" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     центр ---  третий низ           -->
+                <line x1="425" y1="250" x2="425" y2="380" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     центр ---  третий справа           -->
+                <line x1="425" y1="250" x2="555" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     центр ---  третий слева           -->
+                <line x1="425" y1="250" x2="295" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     центр ---  третий верх-справа           -->
+                <line x1="425" y1="250" x2="517" y2="158" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     центр ---  третий них-справа           -->
+                <line x1="425" y1="250" x2="517" y2="342" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     центр ---  третий левый низ           -->
+                <line x1="425" y1="250" x2="333" y2="342" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     центр ---  третий левый-верх           -->
+                <line x1="425" y1="250" x2="333" y2="158" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий верх ---  второй верх           -->
+                <line x1="425" y1="120" x2="425" y2="92.5" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй верх  ---  первый верх           -->
+                <line x1="425" y1="92.5" x2="425" y2="65" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     первый верх  ---  первый справа           -->
+                <line x1="425" y1="65" x2="610" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     первый левый ---  первый верх           -->
+                <line x1="425" y1="65" x2="240" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий низ ---  второй низ           -->
+                <line x1="425" y1="380" x2="425" y2="407.5" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий низ  ---  третий справа           -->
+                <line x1="425" y1="380" x2="555" y2="250" stroke="#7a00cc" stroke-width="1" stroke-dasharray="5,5"/>
+
+                <!--     второй низ ---  первый низ           -->
+                <line x1="425" y1="407.5" x2="425" y2="435" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     первый справа ---  первый снизу           -->
+                <line x1="425" y1="435" x2="610" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     первый низ ---  первый слева           -->
+                <line x1="425" y1="435" x2="240" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий справа ---  второй справа           -->
+                <line x1="555" y1="250" x2="582.5" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй справа ---  первый справа           -->
+                <line x1="582.5" y1="250" x2="610" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий слева ---  второй слева           -->
+                <line x1="295" y1="250" x2="267.5" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй слева ---  первый слева           -->
+                <line x1="267.5" y1="250" x2="240" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй правый верх  ---  первый правый верх           -->
+                <line x1="555" y1="120" x2="536" y2="139" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй правый низ ---  первый правый низ           -->
+                <line x1="555" y1="380" x2="536" y2="361" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй левый низ ---  первый левый низ            -->
+                <line x1="295" y1="380" x2="314" y2="361" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй левый верх ---  первый левый верх            -->
+                <line x1="295" y1="120" x2="314" y2="139" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий правый верх  ---  второй правый верх           -->
+                <line x1="517" y1="158" x2="536" y2="139" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий правый низ  ---  второй правый низ           -->
+                <line x1="517" y1="342" x2="536" y2="361" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий левый низ  ---  второй левый низ          -->
+                <line x1="314" y1="361" x2="333" y2="342" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий левый верх  ---  второй левый верх           -->
+                <line x1="314" y1="139" x2="333" y2="158" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--                центр             -->
+                <circle cx="425" cy="251" r="12" fill="#202060"/>
+                <text x="425" y="251" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_2 }}
+                </text>
+
+                <!--    --------------------------    -->
+
+                <!--                первый слева             -->
+                <circle cx="240" cy="251" r="12" fill="#202060"/>
+                <text x="240" y="251" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.day }}
+                </text>
+
+                <!--                второй слева             -->
+                <circle cx="270" cy="251" r="10" fill="#7a00cc"/>
+                <text x="270" y="251" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_4 }}
+                </text>
+
+                <!--                третий слева             -->
+                <circle cx="295" cy="251" r="8" fill="#202060"/>
+                <text x="295" y="251" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_3 }}
+                </text>
+
+                <!--    --------------------------    -->
+
+                <!--                первый левый-верх             -->
+                <circle cx="295" cy="121" r="12" fill="#7a00cc"/>
+                <text x="295" y="121" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_17 }}
+                </text>
+
+                <!--                второй левый-верх             -->
+                <circle cx="314" cy="140" r="10" fill="#202060"/>
+                <text x="314" y="140" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_25 }}
+                </text>
+
+                <!--                третий левый-верх             -->
+                <circle cx="333" cy="159" r="8" fill="#7a00cc"/>
+                <text x="333" y="159" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_24 }}
+                </text>
+
+                <!--    --------------------------    -->
+
+                <!--                первый сверху             -->
+                <circle cx="425" cy="66" r="12" fill="#202060"/>
+                <text x="425" y="66" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.month }}
+                </text>
+
+                <!--                второй сверху             -->
+                <circle cx="425" cy="95" r="10" fill="#7a00cc"/>
+                <text x="425" y="95" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_6 }}</text>
+
+                <!--                третий сверху             -->
+                <circle cx="425" cy="121" r="8" fill="#202060"/>
+                <text x="425" y="121" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_5 }}
+                </text>
+
+                <!--    --------------------------    -->
 
 
-<div class="container-md" style="color:#fff; margin-top:100px">
-    <p>
-        Давно выяснено, что при оценке дизайна и композиции читаемый текст мешает сосредоточиться. Lorem Ipsum
-        используют потому, что тот обеспечивает более или менее стандартное заполнение шаблона, а также реальное
-        распределение букв и пробелов в абзацах, которое не получается при простой дубликации "Здесь ваш текст.. Здесь
-        ваш текст.. Здесь ваш текст.." Многие программы электронной вёрстки и редакторы HTML используют Lorem Ipsum в
-        качестве текста по умолчанию, так что поиск по ключевым словам "lorem ipsum" сразу показывает, как много
-        веб-страниц всё ещё дожидаются своего настоящего рождения. За прошедшие годы текст Lorem Ipsum получил много
-        версий. Некоторые версии появились по ошибке, некоторые - намеренно (например, юмористические варианты).
-    </p>
-</div>
+                <!--                первый правый-верх             -->
+                <circle cx="555" cy="121" r="12" fill="#7a00cc"/>
+                <text x="555" y="121" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_16 }}
+                </text>
 
-<div class="alert alert-secondary" role="alert">
-    A simple secondary alert—check it out!
+
+                <!--                второй правый-верх             -->
+                <circle cx="536" cy="140" r="10" fill="#202060"/>
+                <text x="536" y="140" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_23 }}
+                </text>
+
+
+                <!--                третий правый-верх             -->
+                <circle cx="517" cy="159" r="8" fill="#7a00cc"/>
+                <text x="517" y="159" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_22 }}
+                </text>
+
+
+                <!--    --------------------------    -->
+
+
+                <!--                первый справа             -->
+                <circle cx="610" cy="251" r="12" fill="#202060"/>
+                <text x="610" y="251" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.year }}
+                </text>
+
+
+                <!--                второй справа             -->
+                <circle cx="580" cy="251" r="10" fill="#7a00cc"/>
+                <text x="580" y="251" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_8 }}
+                </text>
+
+
+                <!--                третий справа             -->
+                <circle cx="555" cy="251" r="8" fill="#202060"/>
+                <text x="555" y="251" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_7 }}
+                </text>
+
+
+                <!--    --------------------------    -->
+
+
+                <!--                первый правый-низ             -->
+                <circle cx="555" cy="381" r="12" fill="#7a00cc"/>
+                <text x="555" y="381" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_15 }}
+                </text>
+
+
+                <!--                второй правый низ             -->
+                <circle cx="536" cy="362" r="10" fill="#202060"/>
+                <text x="536" y="362" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_21 }}
+                </text>
+
+
+                <!--                третий правый-низ             -->
+                <circle cx="517" cy="343" r="8" fill="#7a00cc"/>
+                <text x="517" y="343" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_20 }}
+                </text>
+
+
+                <!--                четвертый правый низ             -->
+                <circle cx="490" cy="316" r="8" fill="#202060"/>
+                <text x="490" y="316" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_11 }}
+                </text>
+
+
+                <!--    --------------------------    -->
+
+
+                <!--                первый снизу              -->
+                <circle cx="425" cy="436" r="12" fill="#202060"/>
+                <text x="425" y="436" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_1 }}
+                </text>
+
+
+                <!--                второй снизу              -->
+                <circle cx="425" cy="406" r="10" fill="#7a00cc"/>
+                <text x="425" y="406" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_10 }}
+                </text>
+
+
+                <!--                третий снизу             -->
+                <circle cx="425" cy="381" r="8" fill="#202060"/>
+                <text x="425" y="381" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_9 }}
+                </text>
+
+
+                <!--    --------------------------    -->
+
+
+                <!--                первый левый низ             -->
+                <circle cx="295" cy="381" r="12" fill="#7a00cc"/>
+                <text x="295" y="381" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_14 }}
+                </text>
+
+                <!--                второй левый-низ             -->
+                <circle cx="314" cy="362" r="10" fill="#202060"/>
+                <text x="314" y="362" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_19 }}
+                </text>
+
+                <!--                третий левый-низ             -->
+                <circle cx="333" cy="343" r="8" fill="#7a00cc"/>
+                <text x="333" y="343" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_18 }}
+                </text>
+
+
+                <!--    --------------------------    -->
+
+                <!--                любовь             -->
+                <circle cx="457.5" cy="348.5" r="8" fill="#7a00cc"/>
+                <text x="457.5" y="348.5" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_12
+                    }}
+                </text>
+                <!--                <text x="112" y="551" fill="#7a00cc" transform="rotate(-45 20,40)" alignment-baseline="middle"-->
+                <!--                      font-size="18px">&#9829-->
+                <!--                </text>-->
+                <text x="112" y="551" fill="#7a00cc" transform="rotate(-45 20,40)" alignment-baseline="middle"
+                      font-size="22px" style="font-weight:990;">&#9825
+                </text>
+
+                <!--                деньги             -->
+                <circle cx="522.5" cy="283.5" r="8" fill="#7a00cc"/>
+                <text x="522.5" y="283.5" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_13
+                    }}
+                </text>
+                <text x="202" y="551" fill="#7a00cc" transform="rotate(-45 20,40)" alignment-baseline="middle"
+                      font-size="16px">$
+                </text>
+
+            </g>
+        </svg>
+        <!--        Конец первого графика         -->
+
+
+    </div>
+
+    <!--    <div class="row">-->
+    <!--        <h3>Матрица <br>"Время личностей"</h3>-->
+    <!--    </div>-->
+
+    <div class="row">
+        <!--        второй график          -->
+
+        <h3 class="text-center text-white">Матрица <br>"Время личностей"</h3>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="850 200 1700 1700"
+             style="vertical-align:top;text-anchor:middle;font-family:monospace;font-size:16px;">
+            <g transform="scale(4)">
+                <!--     центр ---  третий верх           -->
+                <line x1="425" y1="250" x2="425" y2="120" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     центр ---  третий низ           -->
+                <line x1="425" y1="250" x2="425" y2="380" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     центр ---  третий справа           -->
+                <line x1="425" y1="250" x2="555" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     центр ---  третий слева           -->
+                <line x1="425" y1="250" x2="295" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     центр ---  третий верх-справа           -->
+                <line x1="425" y1="250" x2="517" y2="158" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     центр ---  третий них-справа           -->
+                <line x1="425" y1="250" x2="517" y2="342" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     центр ---  третий левый низ           -->
+                <line x1="425" y1="250" x2="333" y2="342" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     центр ---  третий левый-верх           -->
+                <line x1="425" y1="250" x2="333" y2="158" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий верх ---  второй верх           -->
+                <line x1="425" y1="120" x2="425" y2="92.5" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй верх  ---  первый верх           -->
+                <line x1="425" y1="92.5" x2="425" y2="65" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     первый верх  ---  первый справа           -->
+                <line x1="425" y1="65" x2="610" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     первый левый ---  первый верх           -->
+                <line x1="425" y1="65" x2="240" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий низ ---  второй низ           -->
+                <line x1="425" y1="380" x2="425" y2="407.5" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй низ ---  первый низ           -->
+                <line x1="425" y1="407.5" x2="425" y2="435" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     первый справа ---  первый снизу           -->
+                <line x1="425" y1="435" x2="610" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     первый низ ---  первый слева           -->
+                <line x1="425" y1="435" x2="240" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий справа ---  второй справа           -->
+                <line x1="555" y1="250" x2="582.5" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй справа ---  первый справа           -->
+                <line x1="582.5" y1="250" x2="610" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий слева ---  второй слева           -->
+                <line x1="295" y1="250" x2="267.5" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй слева ---  первый слева           -->
+                <line x1="267.5" y1="250" x2="240" y2="250" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй правый верх  ---  первый правый верх           -->
+                <line x1="555" y1="120" x2="536" y2="139" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй правый низ ---  первый правый низ           -->
+                <line x1="555" y1="380" x2="536" y2="361" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй левый низ ---  первый левый низ            -->
+                <line x1="295" y1="380" x2="314" y2="361" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй левый верх ---  первый левый верх            -->
+                <line x1="295" y1="120" x2="314" y2="139" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий правый верх  ---  второй правый верх           -->
+                <line x1="517" y1="158" x2="536" y2="139" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий правый низ  ---  второй правый низ           -->
+                <line x1="517" y1="342" x2="536" y2="361" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий левый низ  ---  второй левый низ          -->
+                <line x1="314" y1="361" x2="333" y2="342" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий левый верх  ---  второй левый верх           -->
+                <line x1="314" y1="139" x2="333" y2="158" stroke="#7a00cc" stroke-width="1"/>
+
+
+                <!--     первый левый низ  ---  первый  правый  низ           -->
+                <line x1="295" y1="381" x2="555" y2="381" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй левый низ  ---  второй  правый  низ           -->
+                <line x1="314" y1="362" x2="536" y2="362" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий левый низ  ---  третий  правый  низ           -->
+                <line x1="333" y1="343" x2="517" y2="343" stroke="#7a00cc" stroke-width="1"/>
+
+
+                <!--     первый левый верх  ---  первый  левый  низ           -->
+                <line x1="295" y1="121" x2="295" y2="381" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй левый верх  ---  второй  левый  низ           -->
+                <line x1="314" y1="140" x2="314" y2="362" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий левый верх  ---  третий  левый  низ           -->
+                <line x1="333" y1="159" x2="333" y2="343" stroke="#7a00cc" stroke-width="1"/>
+
+
+                <!--     первый левый верх  ---  первый  правый верх           -->
+                <line x1="295" y1="121" x2="555" y2="121" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй левый верх  ---  второй  второй верх          -->
+                <line x1="314" y1="140" x2="536" y2="140" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий левый верх  ---  третий  правый верх          -->
+                <line x1="333" y1="159" x2="517" y2="159" stroke="#7a00cc" stroke-width="1"/>
+
+
+                <!--     первый правый низ  ---  первый  правый верх           -->
+                <line x1="555" y1="381" x2="555" y2="121" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     второй правый низ  ---  второй  второй верх          -->
+                <line x1="536" y1="362" x2="536" y2="140" stroke="#7a00cc" stroke-width="1"/>
+
+                <!--     третий правый низ  ---  третий  правый верх          -->
+                <line x1="517" y1="343" x2="517" y2="159" stroke="#7a00cc" stroke-width="1"/>
+
+
+                <!--                центр             -->
+                <circle cx="425" cy="251" r="12" fill="#202060"/>
+                <text x="425" y="251" alignment-baseline="middle" fill="#ffffff" font-size="8px"></text>
+
+                <!--    --------------------------    -->
+
+                <!--                первый слева             -->
+                <circle cx="240" cy="251" r="12" fill="#202060"/>
+                <text x="240" y="251" alignment-baseline="middle" fill="#ffffff" font-size="8px"></text>
+
+                <!--                второй слева             -->
+                <circle cx="270" cy="251" r="10" fill="#7a00cc"/>
+                <text x="270" y="251" alignment-baseline="middle" fill="#ffffff" font-size="8px"></text>
+
+                <!--                третий слева             -->
+                <circle cx="295" cy="251" r="8" fill="#202060"/>
+                <text x="295" y="251" alignment-baseline="middle" fill="#ffffff" font-size="8px"></text>
+
+                <!--    --------------------------    -->
+
+                <!--                первый левый-верх             -->
+                <circle cx="295" cy="121" r="12" fill="#7a00cc"/>
+                <text x="295" y="121" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_17 }}
+                </text>
+
+                <!--                второй левый-верх             -->
+                <circle cx="314" cy="140" r="10" fill="#202060"/>
+                <text x="314" y="140" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_25 }}
+                </text>
+
+                <!--                третий левый-верх             -->
+                <circle cx="333" cy="159" r="8" fill="#7a00cc"/>
+                <text x="333" y="159" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_24 }}
+                </text>
+
+                <!--    --------------------------    -->
+
+                <!--                первый сверху             -->
+                <circle cx="425" cy="66" r="12" fill="#202060"/>
+                <text x="425" y="66" alignment-baseline="middle" fill="#ffffff" font-size="8px"></text>
+
+                <!--                второй сверху             -->
+                <circle cx="425" cy="95" r="10" fill="#7a00cc"/>
+                <text x="425" y="95" alignment-baseline="middle" fill="#ffffff" font-size="8px"></text>
+
+                <!--                третий сверху             -->
+                <circle cx="425" cy="121" r="8" fill="#202060"/>
+                <text x="425" y="121" alignment-baseline="middle" fill="#ffffff" font-size="8px"></text>
+
+                <!--    --------------------------    -->
+
+
+                <!--                первый правый-верх             -->
+                <circle cx="555" cy="121" r="12" fill="#7a00cc"/>
+                <text x="555" y="121" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_16 }}
+                </text>
+
+
+                <!--                второй правый-верх             -->
+                <circle cx="536" cy="140" r="10" fill="#202060"/>
+                <text x="536" y="140" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_23 }}
+                </text>
+
+
+                <!--                третий правый-верх             -->
+                <circle cx="517" cy="159" r="8" fill="#7a00cc"/>
+                <text x="517" y="159" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_22 }}
+                </text>
+
+
+                <!--    --------------------------    -->
+
+
+                <!--                первый справа             -->
+                <circle cx="610" cy="251" r="12" fill="#202060"/>
+                <text x="610" y="251" alignment-baseline="middle" fill="#ffffff" font-size="8px"></text>
+
+
+                <!--                второй справа             -->
+                <circle cx="580" cy="251" r="10" fill="#7a00cc"/>
+                <text x="580" y="251" alignment-baseline="middle" fill="#ffffff" font-size="8px"></text>
+
+
+                <!--                третий справа             -->
+                <circle cx="555" cy="251" r="8" fill="#202060"/>
+                <text x="555" y="251" alignment-baseline="middle" fill="#ffffff" font-size="8px"></text>
+
+
+                <!--    --------------------------    -->
+
+
+                <!--                первый правый-низ             -->
+                <circle cx="555" cy="381" r="12" fill="#7a00cc"/>
+                <text x="555" y="381" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_15 }}
+                </text>
+
+
+                <!--                второй правый низ             -->
+                <circle cx="536" cy="362" r="10" fill="#202060"/>
+                <text x="536" y="362" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_21 }}
+                </text>
+
+
+                <!--                третий правый-низ             -->
+                <circle cx="517" cy="343" r="8" fill="#7a00cc"/>
+                <text x="517" y="343" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_20 }}
+                </text>
+
+
+                <!--    --------------------------    -->
+
+
+                <!--                первый снизу              -->
+                <circle cx="425" cy="436" r="12" fill="#202060"/>
+                <text x="425" y="436" alignment-baseline="middle" fill="#ffffff" font-size="8px"></text>
+
+
+                <!--                второй снизу              -->
+                <circle cx="425" cy="381" r="10" fill="#7a00cc"/>
+                <text x="425" y="381" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.s_3 }}
+                </text>
+
+
+                <!--                третий снизу             -->
+                <circle cx="425" cy="362" r="8" fill="#202060"/>
+                <text x="425" y="362" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.s_2 }}
+                </text>
+
+                <!--                четвёртый снизу             -->
+                <circle cx="425" cy="343" r="8" fill="#202060"/>
+                <text x="425" y="343" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.s_1 }}
+                </text>
+
+                <!--    --------------------------    -->
+
+
+                <!--                первый левый низ             -->
+                <circle cx="295" cy="381" r="12" fill="#7a00cc"/>
+                <text x="295" y="381" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_14 }}
+                </text>
+
+                <!--                второй левый-низ             -->
+                <circle cx="314" cy="362" r="10" fill="#202060"/>
+                <text x="314" y="362" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_19 }}
+                </text>
+
+                <!--                третий левый-низ             -->
+                <circle cx="333" cy="343" r="8" fill="#7a00cc"/>
+                <text x="333" y="343" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.f_18 }}
+                </text>
+
+
+                <!--                правый низ от центра              -->
+                <circle cx="455" cy="281" r="12" fill="#7a00cc"/>
+                <text x="455" y="281" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.s_4 }}
+                </text>
+
+                <!--                левый низ от центра           -->
+                <circle cx="395" cy="281" r="12" fill="#7a00cc"/>
+                <text x="395" y="281" alignment-baseline="middle" fill="#ffffff" font-size="8px">{{ context.s_5 }}
+                </text>
+
+            </g>
+        </svg>
+        <!--        Конец второго графика         -->
+    </div>
 </div>
 
 

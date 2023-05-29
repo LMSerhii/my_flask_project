@@ -8,14 +8,14 @@
     <h1 style="color:#FFFFFF;">Матрица личностей</h1>
     <p class="col-lg-6 mx-auto mb-4" style="color:#FFFFFF;"> </p>
     <div class="container">
-        <form action="/result" method="post">
-            <div class="row g-3 align-items-center mb-3">
+        <form action="/result" method="post" class="row g-3">
+            <div class="row g-3 align-items-center mb-3 ">
                 <div class="col-sm-2" style="color:#FFFFFF;">
                     <label for="inputName" class="col-form-label">Имя</label>
                 </div>
                 <div class="col-sm-8">
                     <input type="text" name="name" id="inputName" class="form-control" aria-labelledby="nameHelpInline"
-                           placeholder="Сергей">
+                           placeholder="Сергей" required>
                 </div>
             </div>
             <div class="row g-3 align-items-center mb-3">
@@ -24,7 +24,7 @@
                 </div>
                 <div class="col-sm-8">
                     <input type="text" name="birthday" id="inputDate" class="form-control" aria-labelledby="dateHelpInline"
-                           placeholder="29.03.1985">
+                           placeholder="29.03.1985" required>
                 </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
