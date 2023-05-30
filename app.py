@@ -21,17 +21,17 @@ def result():
         return num
     
     if request.method == 'POST':
-        birthday = request.form['birthday']
+        day = request.form['day']
+        month = request.form['month']
+        year = request.form['year']
+
+        birthday = f'{day}.{month}.{year}'
+
         name = request.form['name']
 
-        if '.' in birthday:
-            res = birthday.split('.')
-        elif ',' in birthday:
-            res = birthday.split(',')
-
-        month = num_sum(res[1])  # первый сверху
-        day = num_sum(res[0])  # первый слева
-        year = num_sum(res[2])  # первый справа
+        month = num_sum(month)  # первый сверху
+        day = num_sum(day)  # первый слева
+        year = num_sum(year)  # первый справа
 
         f_1 = num_sum((day + month + year))  # Первый снизу
         f_2 = num_sum((f_1 + day + month + year))  # центр

@@ -11,20 +11,28 @@
         <form action="/result" method="post" class="row g-3">
             <div class="row g-3 align-items-center mb-3 ">
                 <div class="col-sm-2" style="color:#FFFFFF;">
-                    <label for="inputName" class="col-form-label">Имя</label>
+<!--                    <label for="inputName" class="col-form-label">Имя</label>-->
                 </div>
                 <div class="col-sm-8">
                     <input type="text" name="name" id="inputName" class="form-control" aria-labelledby="nameHelpInline"
-                           placeholder="Сергей" required>
+                           placeholder="Имя" required>
                 </div>
             </div>
             <div class="row g-3 align-items-center mb-3">
                 <div class="col-sm-2" style="color:#FFFFFF;">
-                    <label for="inputDate" class="col-form-label">Дата рождения</label>
+<!--                    <label for="inputDate" class="col-form-label">Дата рождения</label>-->
                 </div>
-                <div class="col-sm-8">
-                    <input type="text" name="birthday" id="inputDate" class="form-control" aria-labelledby="dateHelpInline"
-                           placeholder="29.03.1985" required>
+                <div class="col-sm-2">
+                    <input type="text" name="day" id="inputDay" class="form-control" aria-labelledby="dateHelpInline"
+                           placeholder="День - 'дд' " required>
+                </div>
+                <div class="col-sm-2">
+                    <input type="text" name="month" id="inputMonth" class="form-control" aria-labelledby="dateHelpInline"
+                           placeholder="Месяц - 'мм' " required>
+                </div>
+                <div class="col-sm-4">
+                    <input type="text" name="year" id="inputYear" class="form-control" aria-labelledby="dateHelpInline"
+                           placeholder="Год  - 'гггг'" required>
                 </div>
             </div>
             <div class="d-grid gap-2 d-md-flex justify-content-md-center">
